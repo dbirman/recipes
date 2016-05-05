@@ -3,7 +3,7 @@
 window.onload=function() {
   $("#list").append("<li>wow this works</li>");
   loadData();
-  setTimeout(buildPage,1);
+  setTimeout(buildPage,50);
 }
 
 function buildPage() {
