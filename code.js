@@ -1,5 +1,12 @@
-window.onload=function() {
 
+
+window.onload=function() {
+  $("#list").append("<li>wow this works</li>");
+  loadData();
+  setTimeout(buildPage,1);
+}
+
+function buildPage() {
   // get tab container
   var container = document.getElementById("tabContainer");
     // set current tab
@@ -23,6 +30,39 @@ window.onload=function() {
     }
 }
 
+function loadData() {
+  $.getJSON("data.json",{}, function( data ){ 
+    /*  # do stuff here  */ 
+    recipes = data.recipes;
+    buildHTML();
+  });
+}
+
+function buildHTML() {
+  c = 0;
+  // Using RECIPES
+  for (i in recipes) {
+    recipe = recipes[i];
+    cname = recipe.name;
+    ings = recipe.ingredients;
+    ctext = recipe.text;
+    // Add the header
+    $("#tabHeader").append("<li id=\"tabHeader_" + c + "\">" + cname + "</li>");
+    // Add the content page
+    $("#tabscontent").append("<div class=\"tabpage\" id=\"tabpage_"+ c + "\"> <h2>"+cname+"</h2> <ul id=\"list_"+c+"\"> </ul> <br> <p>"+ctext+"</p> </div>");
+    // Add the ingredients
+    for (j in ings) {
+      cing = ings[j];
+      $("#list_"+c).append("<li>1 Cup - "+ cing +"</li>")
+    }
+    c++;
+  }
+}
+
+function saveData() {
+  $.saveJ
+}
+
 // on click of one of tabs
 function displayPage() {
   var current = this.parentNode.getAttribute("data-current");
@@ -36,3 +76,5 @@ function displayPage() {
   document.getElementById("tabpage_" + ident).style.display="block";
   this.parentNode.setAttribute("data-current",ident);
 }
+
+

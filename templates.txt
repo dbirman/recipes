@@ -1,0 +1,17 @@
+Adding the header:
+
+<li id="tabHeader_#">RECIPE NAME</li>
+
+Adding the recipe data:
+
+<div class="tabpage" id="tabpage_#">
+    <h2>Page 1</h2>
+    <ul id="list_#">
+    </ul>
+    <br>
+    <p>Put the ingredient 1 in the ingredient 2 and mush</p>
+</div>
+
+Adding the ingredients:
+
+<li># QUANTITYT - ingredient name</li>
