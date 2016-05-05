@@ -3,7 +3,7 @@
 window.onload=function() {
   $("#list").append("<li>wow this works</li>");
   loadData();
-  setTimeout(buildPage,50);
+  setTimeout(buildPage,1);
 }
 
 function buildPage() {
@@ -11,6 +11,11 @@ function buildPage() {
   var container = document.getElementById("tabContainer");
     // set current tab
     var navitem = container.querySelector(".tabs ul li");
+
+    if (navitem==null) {
+      setTimeout(buildPage,1);
+      return
+    }
     //store which tab we are on
     var ident = navitem.id.split("_")[1];
     navitem.parentNode.setAttribute("data-current",ident);
