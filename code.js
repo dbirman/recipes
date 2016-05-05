@@ -1,3 +1,6 @@
+// MAIN VARIABLES
+in_basket = []
+
 
 
 window.onload=function() {
@@ -47,20 +50,39 @@ function buildHTML() {
   c = 0;
   // Using RECIPES
   for (i in recipes) {
-    recipe = recipes[i];
-    cname = recipe.name;
-    ings = recipe.ingredients;
-    ctext = recipe.text;
+    in_basket[i] = 0;
+    var recipe = recipes[i];
+    var cname = recipe.name;
+    var ings = recipe.ingredients;
+    var ctext = recipe.text;
     // Add the header
     $("#tabHeader").append("<li id=\"tabHeader_" + c + "\">" + cname + "</li>");
     // Add the content page
-    $("#tabscontent").append("<div class=\"tabpage\" id=\"tabpage_"+ c + "\"> <h2>"+cname+"</h2> <ul id=\"list_"+c+"\"> </ul> <br> <p>"+ctext+"</p> </div>");
+    $("#tabscontent").append("<div class=\"tabpage\" id=\"tabpage_"+ c + "\"> <h2>"+cname+"</h2> <ul id=\"list_"+c+"\"> </ul> <br> <p>"+ctext+"</p>  <button type=\"button\" id=\"button_"+c+"\" onclick=\"clicked("+c+");\">+</button> </div>");
     // Add the ingredients
     for (j in ings) {
       cing = ings[j];
       $("#list_"+c).append("<li>1 Cup - "+ cing +"</li>")
     }
     c++;
+  }
+}
+
+function clicked(id) {
+  var flip = [1, 0];
+  var tflip = ["-","+"]
+  $("#button_"+id).html(tflip[in_basket[id]]);
+  in_basket[id] = flip[in_basket[id]];
+  buildBasket();
+}
+
+function buildBasket() {
+  $("#basketContent").empty();
+  for (i in in_basket) {
+    if (in_basket[i]==1) {
+      var recipe = recipes[i];
+      $("#basketContent").append("<li>"+ recipe.name + "</li>")
+    }
   }
 }
 
