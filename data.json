@@ -1,6 +1,6 @@
 
 {"recipes":[
     {"name":"lava buckets", "ingredients":["a","b"], "text":"boopiedoopiedooo"},
-    {"name":"muffin cake burps", "text":"add burps to muffins"},
+    {"name":"muffin cake burps", "ingredients":["Burps","Muffins"], "text":"add burps to muffins"},
     {"name":"Allison Buns", "ingredients":["Buns"], "text":"Put hands on buns. Rub."}
 ]}

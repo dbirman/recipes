@@ -78,10 +78,15 @@ function clicked(id) {
 
 function buildBasket() {
   $("#basketContent").empty();
+  $("#groceryList").empty();
   for (i in in_basket) {
     if (in_basket[i]==1) {
       var recipe = recipes[i];
-      $("#basketContent").append("<li>"+ recipe.name + "</li>")
+      $("#basketContent").append("<li>"+ recipe.name + "</li>");
+      var ings = recipe.ingredients;
+      for (j in ings) {
+        $("#groceryList").append("<li>"+ings[j]+"</li>");
+      }
     }
   }
 }
