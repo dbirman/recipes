@@ -8,7 +8,7 @@ window.onload=function() {
   $("#list").append("<li>wow this works</li>");
   loadData();
   setTimeout(buildPage,1);
-  setTimeout(test,50);
+  // setTimeout(test,50);
 }
 
 function test() {
