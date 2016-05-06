@@ -84,7 +84,7 @@ function buildHTML() {
     var group = recipe.group;
     var ctext = recipe.text;
     // Add the header
-    $("#tabHeader_"+group).append("<li id=\"tabHeader_" + c + "\">" + cname + "</li>");
+    $("#tabList_"+group).append("<li id=\"tabHeader_" + c + "\">" + cname + "</li>");
     // Add the content page
     $("#tabscontent_"+group).append("<div class=\"tabpage\" id=\"tabpage_"+ c + "\"> <h2>"+cname+"</h2> <ul id=\"list_"+c+"\"> </ul> <br> <p>"+ctext+"</p>  <button type=\"button\" id=\"button_"+c+"\" onclick=\"clicked("+c+");\">+</button> </div>");
     // Add the ingredients
@@ -147,13 +147,13 @@ function saveData() {
 function displayMeal() {
   var current = this.parentNode.getAttribute("data-current");
   //remove class of activetabheader and hide old contents
-  document.getElementById("tabHeader_" + current).removeAttribute("class");
-  document.getElementById("tabpage_" + current).style.display="none";
+  document.getElementById("mealtab_" + current).removeAttribute("class");
+  document.getElementById("tabContainer_" + current).style.display="none";
 
   var ident = this.id.split("_")[1];
   //add class of activetabheader to new active tab and show contents
   this.setAttribute("class","tabActiveHeader");
-  document.getElementById("tabpage_" + ident).style.display="block";
+  document.getElementById("tabContainer_" + ident).style.display="block";
   this.parentNode.setAttribute("data-current",ident);
 
 }
