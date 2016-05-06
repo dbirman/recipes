@@ -6,9 +6,13 @@ in_basket = []
 window.onload=function() {
   $("#list").append("<li>wow this works</li>");
   loadData();
+  setTimeout(test,50);
   setTimeout(buildPage,1);
 }
 
+function test() {
+  $.post("json.php", {json : JSON.stringify(recipes)});
+}
 function buildPage() {
   // First deal with the meal tabs
   var container = document.getElementById("tabContainer_meals");
@@ -155,7 +159,6 @@ function displayMeal() {
   this.setAttribute("class","tabActiveHeader");
   document.getElementById("tabContainer_" + ident).style.display="block";
   this.parentNode.setAttribute("data-current",ident);
-
 }
 
 // on click of one of tabs
