@@ -12,6 +12,9 @@ window.onload=function() {
 }
 
 function test() {
+  if (recipes==undefined) {
+    setTimeout(test,50);
+  }
   $.post("json.php", {json : JSON.stringify(recipes)});
 }
 
