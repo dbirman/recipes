@@ -6,13 +6,14 @@ in_basket = []
 window.onload=function() {
   $("#list").append("<li>wow this works</li>");
   loadData();
-  setTimeout(test,50);
   setTimeout(buildPage,1);
+  setTimeout(test,50);
 }
 
 function test() {
   $.post("json.php", {json : JSON.stringify(recipes)});
 }
+
 function buildPage() {
   // First deal with the meal tabs
   var container = document.getElementById("tabContainer_meals");
