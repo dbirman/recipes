@@ -1,6 +1,7 @@
 
 {"recipes":[
-    {"name":"lava buckets", "ingredients":["a","b"], "text":"boopiedoopiedooo"},
-    {"name":"muffin cake burps", "ingredients":["Burps","Muffins"], "text":"add burps to muffins"},
-    {"name":"Allison Buns", "ingredients":["Buns"], "text":"Put hands on buns. Rub."}
+    {"group":"0", "name":"lava buckets", "quantities":[5,30], "ingredients":["Burps","b"], "text":"boopiedoopiedooo"},
+    {"group":"0", "name":"lava buckets more", "quantities":[500,25], "ingredients":["Burps","b"], "text":"boopiedoopiedooo"},
+    {"group":"1", "name":"muffin cake burps", "quantities":[5,240], "ingredients":["Burps","Muffins"], "text":"add burps to muffins"},
+    {"group":"2", "name":"Allison Buns","quantities":[25], "ingredients":["Buns"], "text":"Put hands on buns. Rub."}
 ]}
