@@ -1,7 +1,8 @@
 // MAIN VARIABLES
 
 //track what is in basket:
-in_basket = []
+var in_basket = [];
+var recipes;
 
 window.onload=function() {
   $("#list").append("<li>wow this works</li>");
