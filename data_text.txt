@@ -1,7 +1,16 @@
 #RECIPE
-#NAME:Cookies
-#TEXT:1. Preheat oven to 375<br>2. Combine the dry ingredients into a bowl<br>3. In a separate bowl mix the two sugars and butter<br>4. Once they’re mixed put in the egg and vanilla and mix<br>5. Then gradually add the dry ingredients to the mix<br>6. Once well mixed add the chips
-#INGREDIENTS:
+#GROUP
+Dessert
+#NAME
+Cookies
+#TEXT
+1. Preheat oven to 375
+2. Combine the dry ingredients into a bowl
+3. In a separate bowl mix the two sugars and butter
+4. Once they are mixed put in the egg and vanilla and mix
+5. Then gradually add the dry ingredients to the mix
+6. Once well mixed add the chips
+#INGREDIENTS
 300 Flour
 2.5 Salt
 2.5 Baking Soda
@@ -12,25 +21,42 @@
 5 Vanilla
 0 1 Large Egg
 #RECIPE
-#NAME:lava buckets
-#TEXT:boopiedoopiedooo<br>mooofiedoopie
-#INGREDIENTS:
+#GROUP
+Breakfast
+#NAME
+lava buckets
+#TEXT
+boopiedoopiedooo
+mooofiedoopie
+#INGREDIENTS
 5 Burps
 30 b
 #RECIPE
-#NAME:lava buckets more
-#TEXT:boopiedoopiedooo
-#INGREDIENTS:
+#GROUP
+Breakfast
+#NAME
+lava buckets more
+#TEXT
+boopiedoopiedooo
+#INGREDIENTS
 500 Burps
 25 b
 #RECIPE
-#NAME:muffin cake burps
-#TEXT:add burps to muffins
-#INGREDIENTS:
+#GROUP
+Lunch
+#NAME
+muffin cake burps
+#TEXT
+add burps to muffins
+#INGREDIENTS
 5 Burps
 240 Muffins
 #RECIPE
-#NAME:Allison Buns
-#TEXT:Put hands on buns. Rub.
-#INGREDIENTS:
+#GROUP
+Dinner
+#NAME
+Allison Buns
+#TEXT
+Put hands on buns. Rub.
+#INGREDIENTS
 25 Buns

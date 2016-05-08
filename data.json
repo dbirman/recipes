@@ -5,7 +5,7 @@
 		"name":"Cookies",
 		"quantities":[300,2.5,2.5,120,60,120,240,5,0],
 		"ingredients":["Flour","Salt","Baking Soda","Butter","Granulate Sugar","Brown Sugar","Choclate Chips","Vanilla","1 Large Egg"],
-		"text":"1. Preheat oven to 375<br>2. Combine the dry ingredients into a bowl<br>3. In a separate bowl mix the two sugars and butter<br>4. Once they’re mixed put in the egg and vanilla and mix<br>5. Then gradually add the dry ingredients to the mix<br>6. Once well mixed add the chips"
+		"text":"1. Preheat oven to 375<br>2. Combine the dry ingredients into a bowl<br>3. In a separate bowl mix the two sugars and butter<br>4. Once they are mixed put in the egg and vanilla and mix<br>5. Then gradually add the dry ingredients to the mix<br>6. Once well mixed add the chips"
 	},
     {"group":"0", "name":"lava buckets", "quantities":[5,30], "ingredients":["Burps","b"], "text":"boopiedoopiedooo<br>mooofiedoopie"},
     {"group":"0", "name":"lava buckets more", "quantities":[500,25], "ingredients":["Burps","b"], "text":"boopiedoopiedooo"},
