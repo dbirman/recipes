@@ -5,16 +5,8 @@ var in_basket = [];
 var recipes;
 
 window.onload=function() {
-  $("#list").append("<li>wow this works</li>");
   loadData();
   setTimeout(buildPage,1);
-}
-
-function test() {
-  if (recipes==undefined) {
-    setTimeout(test,50);
-  }
-  $.post("json.php", {json : JSON.stringify(recipes)});
 }
 
 function buildPage() {
@@ -73,7 +65,7 @@ function buildPage() {
 }
 
 function loadData() {
-  $.getJSON("data.json",{}, function( data ){ 
+  $.getJSON("data/data.json",{}, function( data ){ 
     /*  # do stuff here  */ 
     recipes = data.recipes;
     buildHTML();
