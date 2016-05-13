@@ -32,7 +32,7 @@ function buildPage() {
     tabs[i].onclick=displayMeal;
   }
 
-  mealgroups = [0,1,2];
+  mealgroups = [0,1,2,3];
 
   for (mi in mealgroups) {
     // get tab container
@@ -65,7 +65,7 @@ function buildPage() {
 }
 
 function loadData() {
-  $.getJSON("data/data.json",{}, function( data ){ 
+  $.getJSON("data.json",{}, function( data ){ 
     /*  # do stuff here  */ 
     recipes = data.recipes;
     buildHTML();

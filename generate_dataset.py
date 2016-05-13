@@ -1,4 +1,5 @@
 import os
+import json
 
 cd = os.path.dirname(os.path.realpath(__file__))
 # Get all the groups
@@ -27,7 +28,6 @@ for group in groups:
 		flags = 0
 
 		for line in lines:
-			print(line)
 			skip = 0
 			if (line=="#TEXT"):
 				flags = 4
@@ -51,7 +51,6 @@ for group in groups:
 
 data = {}
 data['recipes'] = allrecipes
-print(data)
 
-#f = open('data.json','w')
-#json.dump(data,f)
+f = open('data.json','w')
+json.dump(data,f)
